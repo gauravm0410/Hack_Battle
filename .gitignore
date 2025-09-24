@@ -1,0 +1,45 @@
+node_modules
+# Keep environment variables out of version control
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build / cache
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+
+# Prisma
+prisma/dev.db        # if you ever use SQLite locally
+prisma/*.db-journal
+.prisma/
+
+# Logs
+logs
+*.log
+*.log.*
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,13 +1,16 @@
 {
   "name": "gesture-game-kbc",
   "version": "1.0.0",
-  "description": "A Snakes and Ladders game with a KBC quiz, controlled by hand gestures.",
+  "description": "A gesture-controlled Snakes and Ladders KBC game.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "socket.io": "^4.7.2"
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "ws": "^8.18.3"
   }
 }

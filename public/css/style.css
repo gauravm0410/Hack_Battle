@@ -1,0 +1,49 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Custom styles for board numbers and layout */
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 4px solid #4a5568;
+    position: relative;
+}
+
+.board-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+}
+
+.board-cell::before {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+.board-cell span {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 0.7rem;
+}
+
+/* Flip numbers in alternating rows for classic board layout */
+.row-even .board-cell:nth-child(1) span {
+    left: calc(100% - 12px);
+}
+
+.pawn {
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.quiz-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
